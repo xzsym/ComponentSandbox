@@ -29,6 +29,7 @@ const config = {
             }
         ]
     },
+    devtool: 'source-map',
     plugins: [
         new HtmlWebpackPlugin()
     ],
