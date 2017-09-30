@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Spinner from './spiner';
 import SymphonyIcon from './symphonyIcon';
 import './style/loader.scss';
 
@@ -29,6 +30,25 @@ const imageLoader = (props) => {
         </div>
     );
 
+};
+
+export const ImageLoader2 = (props) => {
+
+    const { dimension, theme } = props;
+    const dimInPx = `${dimension || DEFAULT_DIMENSION}px`;
+    const style = {
+        width: dimInPx,
+        height: dimInPx,
+    };
+
+    return (
+        <div className="imageloader-container" style={style}>
+            <Spinner dimension={dimension} />
+            <div className="icon">
+                <SymphonyIcon dimension={dimension/2}/>
+            </div>
+        </div>
+    );
 };
 
 export default imageLoader;

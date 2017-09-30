@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import classNames from 'classnames';
 
-import ImageLoader from './ImageLoader';
+import ImageLoader, { ImageLoader2 } from './ImageLoader';
 import './style.scss';
 
 const getClassNames = (state) => {
@@ -56,8 +56,7 @@ class ComponentList extends Component {
                     </label>
                 </div>
                 <ImageLoader dimension={200} />
-                <ImageLoader dimension={300} />
-                <ImageLoader dimension={400} theme={'dark'} />
+                <ImageLoader2 dimension={200} />
             </div>
         );   
     }
