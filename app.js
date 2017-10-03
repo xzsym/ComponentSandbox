@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import classNames from 'classnames';
 
 import ImageLoader, { ImageLoader2 } from './ImageLoader';
+import { Loader, AnimatedProfileLoader, AnimatedMessageLoader } from './MessageLoader';
 import './style.scss';
 
 const getClassNames = (state) => {
@@ -57,6 +58,9 @@ class ComponentList extends Component {
                 </div>
                 <ImageLoader dimension={200} />
                 <ImageLoader2 dimension={200} />
+                <Loader />
+                <AnimatedProfileLoader />
+                <AnimatedMessageLoader />
             </div>
         );   
     }

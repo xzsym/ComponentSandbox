@@ -1,0 +1,89 @@
+.timeline-item {
+    max-width: 472px;
+}
+
+@keyframes placeHolderShimmer{
+    0%{
+        background-position: -468px 0
+    }
+    100%{
+        background-position: 468px 0
+    }
+}
+
+.animated-background {
+    -webkit-animation-duration: 1.75s;
+    animation-duration: 1.75s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: placeHolderShimmer;
+    animation-name: placeHolderShimmer;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    background: #eeeeee;
+    background: -webkit-gradient(linear, left top, right top, color-stop(8%, #eeeeee), color-stop(18%, #dddddd), color-stop(33%, #eeeeee));
+    background: -webkit-linear-gradient(left, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+    background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+    -webkit-background-size: 800px 104px;
+    background-size: 800px 104px;
+    position: relative;
+}
+
+.background-mask {
+    .light & {
+        background-color: #f9f9f9;
+    }
+
+    .dark & {
+        background-color: #5a5a5a;
+    }
+
+    &.hbar {
+        height: 5px;
+    }
+}
+
+.shadowblock-heander,
+.shadowblock-body {
+    display: flex;
+    flex-direction: row;
+
+    .left {
+        width: 20px;
+    }
+
+    .right {
+        flex: 1;
+        flex-direction: column;
+
+        .middle {
+            flex-direction: row;
+            display: flex;
+
+            .avatar {
+                width: 35px;
+            }
+            .gap {
+                width: 5px;
+            }
+            .details {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+            }
+        }
+    }
+}
+
+.shadowbar {
+    height: 12px;
+    display: flex;
+    flex-direction: row;
+
+    &.thick {
+        height: 18px;
+    }
+}
