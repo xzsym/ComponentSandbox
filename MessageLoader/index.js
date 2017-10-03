@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-import ShadowBar from './ShadowBar';
-
 import {
     ProfileHeaderLoader as AnimatedProfileHeaderLoader,
     MentionHeaderLoader as AnimatedMentionHeaderLoader,
