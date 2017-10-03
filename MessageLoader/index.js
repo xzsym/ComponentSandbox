@@ -3,8 +3,11 @@ import React, { Component } from 'react';
 import ShadowBar from './ShadowBar';
 
 export {
-    ProfileLoader as AnimatedProfileLoader,
-    MessageLoader as AnimatedMessageLoader
+    ProfileHeaderLoader as AnimatedProfileHeaderLoader,
+    MessageLoader as AnimatedMessageLoader,
+    RoomHeaderLoader as AnimatedRoomHeaderLoader,
+    MentionHeaderLoader as AnimatedMentionHeaderLoader,
+    ProfileMessageLoader as AnimatedProfileMessageLoader,
 } from './AnimatedShadowBlock';
 
 export class Loader extends Component {
