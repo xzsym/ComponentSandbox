@@ -1,0 +1,67 @@
+.shadowblock-hbox {
+    flex-direction: row;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.shadowblock-vbox {
+    flex-direction: column;
+    display: flex;
+}
+
+$shadowcolor: rgba(0, 0, 0, 0.1);
+
+.shadow-container {
+
+    .span {
+        flex: 1;
+    }
+
+    .avatar {
+        background-color: $shadowcolor;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+    }
+
+    .hpadding {
+        padding-left: 8px;
+    }
+
+    .shadowbar {
+        background-color: $shadowcolor;
+        height: 12px;
+        border-radius: 2px;
+
+        &.thick {
+            height: 18px;
+        }
+    }
+
+    &.header {
+        padding: 13px 20px;
+        
+        .hseparator {
+            height: 5px;
+        }
+    }
+
+    &.message {
+        padding: 20px 24px;
+
+        .hseparator {
+            height: 8px;
+        }
+
+        .shadowbar {
+            height: 14px;
+
+            &.thick {
+                height: 17px;
+            }
+        }
+    }
+
+}
+
+

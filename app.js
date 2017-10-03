@@ -5,11 +5,11 @@ import classNames from 'classnames';
 import ImageLoader, { ImageLoader2 } from './ImageLoader';
 import {
     Loader,
-    AnimatedProfileHeaderLoader,
-    AnimatedMessageLoader,
-    AnimatedRoomHeaderLoader,
-    AnimatedMentionHeaderLoader,
-    AnimatedProfileMessageLoader,
+    ProfileHeaderLoader,
+    MessageLoader,
+    RoomHeaderLoader,
+    MentionHeaderLoader,
+    ProfileMessageLoader,
 } from './MessageLoader';
 import './style.scss';
 
@@ -65,12 +65,21 @@ class ComponentList extends Component {
                 </div>
                 <ImageLoader dimension={200} />
                 <ImageLoader2 dimension={200} />
-                <Loader />
-                <AnimatedProfileHeaderLoader />
-                <AnimatedMessageLoader />
-                <AnimatedRoomHeaderLoader />
-                <AnimatedMentionHeaderLoader />
-                <AnimatedProfileMessageLoader />
+
+                <ProfileHeaderLoader />
+                <ProfileHeaderLoader animated />
+
+                <MessageLoader />
+                <MessageLoader animated />
+
+                <RoomHeaderLoader />
+                <RoomHeaderLoader animated />
+
+                <MentionHeaderLoader />
+                <MentionHeaderLoader animated />
+
+                <ProfileMessageLoader />
+                <ProfileMessageLoader animated />
             </div>
         );   
     }

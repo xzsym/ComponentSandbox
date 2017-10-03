@@ -2,13 +2,22 @@ import React, { Component } from 'react';
 
 import ShadowBar from './ShadowBar';
 
-export {
+import {
     ProfileHeaderLoader as AnimatedProfileHeaderLoader,
-    MessageLoader as AnimatedMessageLoader,
-    RoomHeaderLoader as AnimatedRoomHeaderLoader,
     MentionHeaderLoader as AnimatedMentionHeaderLoader,
+    RoomHeaderLoader as AnimatedRoomHeaderLoader,
+    MessageLoader as AnimatedMessageLoader,
     ProfileMessageLoader as AnimatedProfileMessageLoader,
-} from './AnimatedShadowBlock';
+} from './AnimatedShadowBlocks';
+
+import {
+    ProfileHeaderLoader as StaticProfileHeaderLoader,
+    RoomHeaderLoader as StaticRoomHeaderLoader,
+    MentionHeaderLoader as StaticMentionHeaderLoader,
+    MessageLoader as StaticMessageLoader,
+    ProfileMessageLoader as StaticProfileMessageLoader,
+} from './StaticShadowBlocks';
+
 
 export class Loader extends Component {
     render() {
@@ -21,3 +30,47 @@ export class Loader extends Component {
     }
 }
 
+export const ProfileHeaderLoader = (props) => {
+    const { animated } = props;
+    return (
+        <div>
+            { animated ? <AnimatedProfileHeaderLoader /> : <StaticProfileHeaderLoader /> }
+        </div>
+    );
+};
+
+export const MentionHeaderLoader = (props) => {
+    const { animated } = props;
+    return (
+        <div>
+            { animated ? <AnimatedMentionHeaderLoader /> : <StaticMentionHeaderLoader /> }
+        </div>
+    );
+};
+
+export const RoomHeaderLoader = (props) => {
+    const { animated } = props;
+    return (
+        <div>
+            { animated ? <AnimatedRoomHeaderLoader /> : <StaticRoomHeaderLoader /> }
+        </div>
+    );
+};
+
+export const MessageLoader = (props) => {
+    const { animated } = props;
+    return (
+        <div>
+            { animated ? <AnimatedMessageLoader /> : <StaticMessageLoader /> }
+        </div>
+    );
+};
+
+export const ProfileMessageLoader = (props) => {
+    const { animated } = props;
+    return (
+        <div>
+            { animated ? <AnimatedProfileMessageLoader /> : <StaticProfileMessageLoader /> }
+        </div>
+    );
+};
