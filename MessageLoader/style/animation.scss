@@ -73,6 +73,32 @@
             height: 18px;
         }
     }
+
+    .animated-background {
+        -webkit-animation-duration: 1.75s;
+        animation-duration: 1.75s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-name: placeHolderShimmer;
+        animation-name: placeHolderShimmer;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        background: -webkit-gradient(linear, left top, right top, color-stop(8%, #ddd), color-stop(18%, #ccc), color-stop(33%, #ddd));
+        background: -webkit-linear-gradient(left, #ddd 8%, #ccc 18%, #ddd 33%);
+        background: linear-gradient(to right, #ddd 8%, #ccc 18%, #ddd 33%);
+        -webkit-background-size: 800px 104px;
+        background-size: 800px 104px;
+        position: relative;
+
+        .dark & {
+            background: -webkit-gradient(linear, left top, right top, color-stop(8%, #ddd), color-stop(18%, #eee), color-stop(33%, #ddd));
+            background: -webkit-linear-gradient(left, #ddd 8%, #eee 18%, #ddd 33%);
+            background: linear-gradient(to right, #ddd 8%, #eee 18%, #ddd 33%);
+        }
+    }
+
 }
 
 @keyframes placeHolderShimmer{
@@ -84,21 +110,6 @@
     }
 }
 
-.animated-background {
-    -webkit-animation-duration: 1.75s;
-    animation-duration: 1.75s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-name: placeHolderShimmer;
-    animation-name: placeHolderShimmer;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-    background: -webkit-gradient(linear, left top, right top, color-stop(8%, #eeeeee), color-stop(18%, #dddddd), color-stop(33%, #eeeeee));
-    background: -webkit-linear-gradient(left, #e5e5e5 8%, #cccccc 18%, #e5e5e5 33%);
-    background: linear-gradient(to right, #e5e5e5 8%, #cccccc 18%, #e5e5e5 33%);
-    -webkit-background-size: 800px 104px;
-    background-size: 800px 104px;
-    position: relative;
-}
+
+
+

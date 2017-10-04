@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import classNames from 'classnames';
 
-import ImageLoader, { ImageLoader2 } from './ImageLoader';
+import ImageLoader from './ImageLoader';
 import {
     Loader,
     ProfileHeaderLoader,
@@ -63,13 +63,12 @@ class ComponentList extends Component {
                         <input type="checkbox" checked={this.state.contrast} onChange={this.onToggleContrast} />
                     </label>
                 </div>
-                <ImageLoader dimension={200} />
-                
-                <ImageLoader2 dimension={100} />
-                <ImageLoader2 dimension={50} />
-                <ImageLoader2 dimension={400} />
-                <ImageLoader2 dimension={100} />
-                <ImageLoader2 dimension={400} />
+               
+                <ImageLoader dimension={100} />
+                <ImageLoader dimension={50} />
+                <ImageLoader dimension={400} />
+                <ImageLoader dimension={100} />
+                <ImageLoader dimension={400} />
 
                 <ProfileHeaderLoader />
                 <ProfileHeaderLoader animated />
