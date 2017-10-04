@@ -64,7 +64,12 @@ class ComponentList extends Component {
                     </label>
                 </div>
                 <ImageLoader dimension={200} />
-                <ImageLoader2 dimension={200} />
+                
+                <ImageLoader2 dimension={100} />
+                <ImageLoader2 dimension={50} />
+                <ImageLoader2 dimension={400} />
+                <ImageLoader2 dimension={100} />
+                <ImageLoader2 dimension={400} />
 
                 <ProfileHeaderLoader />
                 <ProfileHeaderLoader animated />

@@ -95,10 +95,9 @@
     animation-name: placeHolderShimmer;
     -webkit-animation-timing-function: linear;
     animation-timing-function: linear;
-    background: #eeeeee;
     background: -webkit-gradient(linear, left top, right top, color-stop(8%, #eeeeee), color-stop(18%, #dddddd), color-stop(33%, #eeeeee));
-    background: -webkit-linear-gradient(left, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
-    background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+    background: -webkit-linear-gradient(left, #e5e5e5 8%, #cccccc 18%, #e5e5e5 33%);
+    background: linear-gradient(to right, #e5e5e5 8%, #cccccc 18%, #e5e5e5 33%);
     -webkit-background-size: 800px 104px;
     background-size: 800px 104px;
     position: relative;
