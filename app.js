@@ -70,20 +70,25 @@ class ComponentList extends Component {
                 <ImageLoader dimension={100} />
                 <ImageLoader dimension={400} />
 
+                <div className="header">
+
                 <ProfileHeaderLoader />
                 <ProfileHeaderLoader animated />
-
-                <MessageLoader />
-                <MessageLoader animated />
 
                 <RoomHeaderLoader />
                 <RoomHeaderLoader animated />
 
                 <MentionHeaderLoader />
                 <MentionHeaderLoader animated />
+                </div>
+
+                <div className="body">
+                <MessageLoader />
+                <MessageLoader animated />
 
                 <ProfileMessageLoader />
                 <ProfileMessageLoader animated />
+                </div>
             </div>
         );   
     }

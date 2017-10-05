@@ -5,5 +5,9 @@
         fill: none;
         fill-rule: evenodd;
         opacity: 0.867527174;
+
+        .dark & {
+            stroke: #fff;
+        }
     }
 }

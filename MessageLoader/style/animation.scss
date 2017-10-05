@@ -7,6 +7,21 @@
         .hbar {
             height: 5px;
         }
+
+        .background-mask {
+            .light & {
+                background-color: #fbfbfb;
+            }
+        
+            .dark & {
+                background-color: #2c2c2c;
+            }
+
+            .dark.contrast & {
+                background-color: #111111;
+            }
+        }
+
     }
 
     &.message {
@@ -15,17 +30,23 @@
         .hbar {
             height: 8px;
         }
+
+        .background-mask {
+            .light & {
+                background-color: #fbfbfb;
+            }
+        
+            .dark & {
+                background-color: #282828;
+            }
+
+            .dark.contrast & {
+                background-color: #181818;
+            }
+        }
     }
 
     .background-mask {
-        .light & {
-            background-color: #f9f9f9;
-        }
-    
-        .dark & {
-            background-color: #5a5a5a;
-        }
-    
         &.block {
             flex: 1;
         }
@@ -93,9 +114,9 @@
         position: relative;
 
         .dark & {
-            background: -webkit-gradient(linear, left top, right top, color-stop(8%, #ddd), color-stop(18%, #eee), color-stop(33%, #ddd));
-            background: -webkit-linear-gradient(left, #ddd 8%, #eee 18%, #ddd 33%);
-            background: linear-gradient(to right, #ddd 8%, #eee 18%, #ddd 33%);
+            background: -webkit-gradient(linear, left top, right top, color-stop(8%, #535353), color-stop(18%, #444), color-stop(33%, #535353));
+            background: -webkit-linear-gradient(left, #535353 8%, #444 18%, #535353 33%);
+            background: linear-gradient(to right, #535353 8%, #444 18%, #535353 33%);
         }
     }
 

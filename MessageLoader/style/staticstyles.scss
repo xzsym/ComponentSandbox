@@ -10,6 +10,7 @@
 }
 
 $shadowcolor: rgba(0, 0, 0, 0.1);
+$shadowcolor-drak: #535353;
 
 .shadow-container {
 
@@ -22,6 +23,10 @@ $shadowcolor: rgba(0, 0, 0, 0.1);
         width: 32px;
         height: 32px;
         border-radius: 50%;
+
+        .dark & {
+            background-color: $shadowcolor-drak;
+        }
     }
 
     .hpadding {
@@ -35,6 +40,10 @@ $shadowcolor: rgba(0, 0, 0, 0.1);
 
         &.thick {
             height: 18px;
+        }
+
+        .dark & {
+            background-color: $shadowcolor-drak;
         }
     }
 

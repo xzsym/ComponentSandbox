@@ -41,7 +41,7 @@ export const ImageLoader = (props) => {
             <div className="loader" style={loaderStyle}>
                 <Spinner dimension={loaderSize} />
                 <div className="icon">
-                    <SymphonyIcon dimension={loaderSize/2}/>
+                    <SymphonyIcon dimension={loaderSize/2.5}/>
                 </div>
             </div>
         </div>
